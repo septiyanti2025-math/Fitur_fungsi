@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div id="loginPage" class="card">
+        <h1>LOGIN</h1>
+        <p>Silakan masuk ke akun Anda</p>
+
+        <input type="text" id="loginUsername"
+               placeholder="Username">
+
+        <input type="password" id="loginPassword"
+               placeholder="Password">
+
+        <button onclick="login()">Masuk</button>
+
+        <p>Belum punya akun?
+            <a href="#" onclick="showRegister()">Daftar</a>
+        </p>
+    </div>
+
+    <div id="registerPage" class="card hidden">
+        <h1>DAFTAR AKUN</h1>
+        <p>Buat akun baru Anda</p>
+
+        <input type="text" id="regUsername"
+               placeholder="Buat Username">
+
+        <input type="password" id="regPassword"
+               placeholder="Buat Password">
+
+        <button onclick="register()">Daftar</button>
+
+        <p>Sudah punya akun?
+            <a href="#" onclick="showLogin()">Login</a>
+        </p>
+    </div>
+
+    <div id="dashboard" class="card hidden">
+        <h1>SELAMAT DATANG!</h1>
+        <h2 id="welcomeUser"></h2>
+        <p>Anda berhasil login.</p>
+
+        <button onclick="logout()">Logout</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
